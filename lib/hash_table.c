@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**********************************************************
  *                       HASH TABLE
  **********************************************************/
@@ -95,6 +93,7 @@ static void ht_free( hash_table *ht ) {
  *              UNIT TEST
  **************************************/
 
+#include <stdio.h>
 int main() {
     hash_table *ht0 = ht_init();
 
