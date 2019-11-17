@@ -28,6 +28,7 @@ static char *manacher(const char *const s) {
             ext_r = i + 1;
         } else {
             size_t j = (c << 1) - i;
+            // make sure size_t underflow never happen
             if (radius[j] + 1 < r - i) {
                 radius[i] = radius[j];
                 ext_l = SIZE_MAX;  // signal for no extension
