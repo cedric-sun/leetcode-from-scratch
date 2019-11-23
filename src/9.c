@@ -1,5 +1,5 @@
 #include <limits.h>
-int reverse( int x ) {
+static int reverse( int x ) {
     int ans = 0;
     while ( x ) {
         if ( ans > INT_MAX / 10 || ans < INT_MIN / 10 ) return 0;
@@ -10,4 +10,9 @@ int reverse( int x ) {
         x /= 10;
     }
     return ans;
+}
+
+bool isPalindrome( int x ) {
+    if ( x < 0 ) return 0;
+    return x == reverse( x );
 }
