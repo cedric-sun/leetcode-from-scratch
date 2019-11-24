@@ -2,3 +2,8 @@ Leetcode from Scratch
 =====================
 
 Leetcode solution in C99.
+
+VLA free. Used glibc calls are:
+
+- malloc, calloc, free
+- strlen, memcpy, memcmp
