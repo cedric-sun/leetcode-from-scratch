@@ -6,4 +6,8 @@ Leetcode solution in C99.
 VLA free. Used glibc calls are:
 
 - malloc, calloc, free
-- strlen, memcpy, memcmp
+- strlen, memcpy
+
+The source-level library is separated as another project:
+
+    https://github.com/cedric-sun/algo-c
