@@ -42,6 +42,8 @@ static void dfs( size_t i ) {
 char** generateParenthesis( int n, int* returnSize ) {
     g_n = n;
     ans_cap = 100;
+    // the exact cap is a catalan number sequence
+    // indexed by n, but no bother here
     ans = malloc( ans_cap * sizeof *ans );
     buf_sz = ( n << 1 ) + 1;
     buffer = malloc( buf_sz * sizeof *buffer );
